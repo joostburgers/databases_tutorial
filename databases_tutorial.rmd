@@ -1,0 +1,28 @@
+---
+title: "Databases Overview"
+author: "Johannes Burgers"
+date: "10/19/2021"
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    self_contained: false
+    reveal_plugins: ["menu"]
+    reveal_options:
+      menu:
+        side: right
+---
+
+```{r setup, include=FALSE, message = FALSE, warning=FALSE, error=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning=FALSE, error=FALSE, tidy='styler')
+knitr::knit_engines$set(python = reticulate::eng_python)
+```
+
+```{r load_libraries}
+library(gutenbergr)
+library(tidytext)
+library(tidyverse)
+library(htmlTable)
+```
+
+# Working with Tables
+
